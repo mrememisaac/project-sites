@@ -1,0 +1,31 @@
+<div class="container pad-top">
+  <table class="table sitetable">
+      <tr>
+          <td><h3>Details for {{site.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{site.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{site.description}}</td>
+      </tr>
+      <tr>
+          <td>Condition</td>
+          <td>{{site.condition}}</td>
+      </tr>
+      <tr>
+          <td>Year Started</td>
+          <td>{{site.yearStarted}}</td>
+      </tr>      
+      <tr>
+          <td>Location</td>
+          <td>{{site.latitude}}, {{site.longitude}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editSite({id:site.id})">Edit</a>
+  </div>
+</div>
